@@ -1,0 +1,35 @@
+/* Fuentes */
+@font-face{
+    font-family: "Avenir";
+    src:url("../fonts/Avenir-Book.ttf");
+}
+
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color: inherit;
+}
+
+/* Generales */
+
+html{
+    font-size: 20px;
+}
+
+@media(max-width: 440px){
+    html{
+        font-size:18px
+    }
+}
+
+body{
+    font-family:"Avenir", sans-serif;
+    color: #67666e;
+}
