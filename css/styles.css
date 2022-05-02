@@ -129,3 +129,38 @@ img{
     }
     
 }
+
+/* Header */
+header{
+    background-color:black;
+    /* box-shadow: 1.5px 4px #b3b3b3; */
+    opacity: 80%;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    
+}
+header img{
+    height: 60px;
+    width: auto;
+}
+
+header nav a{
+    color: #67666e;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: 300ms ease-in-out all;
+}
+header nav a.activo,
+header nav a:hover{
+    color: #a97c50;
+    font-weight: bold;
+}
+/*Me quedé en lo último de la 107*/
