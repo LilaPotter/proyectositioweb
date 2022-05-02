@@ -33,3 +33,99 @@ body{
     font-family:"Avenir", sans-serif;
     color: #67666e;
 }
+
+img{
+    max-width: 100%;
+}
+
+/* Hero */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top:0;
+    left: 0;
+    overflow: hidden; /*que desaparezcan si se desbordan*/
+}
+
+@keyframes heroAnimation{
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    12%{opacity: 1; }
+    25%{transform: scale(1.2);}
+    75%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100%{opacity: 0;}
+}
+.hero div{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size: cover; /*ocupe todo el espacio disponible*/
+    background-position: center;
+    background-repeat: none;
+    opacity: 0;
+    animation:heroAnimation 18s infinite;/*aqui se manda llamar el @keyframe hero Animation*/
+}
+
+.hero div:nth-child(1) {
+    background-image: url("../img/front1.jpg");
+}
+
+.hero div:nth-child(2) {
+    background-image: url("../img/front2.jpg");
+    animation-delay: 6s;
+}
+
+.hero div:nth-child(3) {
+    background-image: url("../img/front3.jpg");
+    animation-delay: 12s;
+}
+
+.hero .hero-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+    opacity: 1;
+    width: 25%;
+    height: auto;
+}
+
+.hero .hero-down{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+    opacity: 1;
+    width: 5%;
+    height: auto;
+}
+
+@media(max-width: 720px){
+    .hero .hero-logo{
+        width:60%;
+    }
+    .hero .hero-down{
+        width:15%;
+    }
+}
+@media(max-width: 480px){
+    .hero .hero-logo{
+        width:80%;
+    }
+    .hero .hero-down{
+        width:20%;
+    }
+    
+}
