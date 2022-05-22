@@ -178,6 +178,93 @@ header.transparente{
     background-color: transparent;
     box-shadow:none ;
 }
+/*Burger button*/
+#burger{
+    position: absolute;
+    top:1rem;
+    left: 1rem;
+    cursor:pointer;
+    z-index:1;
+    display: none;
+}
+
+#burger .barra{
+    width: 30px;
+    height: 2px;
+    margin: 6px;
+    background-color:#a97c50;
+    transition: 400ms all ease-in-out;
+}
+
+/* #burger.abierto .barra{
+    background-color: white;
+} */
+/*transforaciones*/
+
+#burger.abierto .barra.sup{
+    transform:translateY(8px) rotateZ(45deg);
+}
+#burger.abierto .barra.med{
+    width: 0;
+}
+#burger.abierto .barra.inf{
+    transform:translateY(-8px) rotateZ(-45deg);
+}
+@media(max-width: 620px){
+    #burger{
+        display: block;;
+    }
+    header {
+        justify-content: flex-end;/*como solo hay un ícono se va a ir al final, por tanto a la parte derecha de la pantalla*/
+    }
+    header nav{
+        display: none;
+    }
+}
+
+/* Menú Lateral */
+.menu{
+    width: 360px;
+    height: 100vh;
+    background-color: #424242;
+    position: fixed;
+    top:0;
+    left:-360px; /*al ppio esto estaba en 0 pero se va a desplazar, por eso se esconde con -*/
+    padding-top: 40px;
+    transition: all 300ms ease-in-out;/*Se necesita posicionar y poner top y left para que funcione la transición*/
+}
+
+.menu.abierto{ /*esta clase se va a crear con jquery.Cuando se de click al botón burguer jquery añadirá la clase abierto*/
+    left:0
+}
+
+.menu nav{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu nav a{
+    padding: 0.6rem 0;
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 1.1rem;
+    transition: 300ms all ease-in-out;
+}
+
+.menu nav a:hover{
+    color: white;
+}
+
+.menu .copyright{
+    color: rgba(255, 255, 255, 0.541);
+    font-family: 0.9rem;
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;/*No entiendo esto, se necesita un 100% para que afecte al text-align*/
+}
 /* layout */
 .primera{
     margin-top: 100vh; /*para que baje por debajo delelemento hero y lo podamos visualzar*/

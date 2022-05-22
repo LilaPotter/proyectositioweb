@@ -7,4 +7,8 @@ $(document).ready(function(){/*cambiar una clase cuando se produzca el scroll ve
             $("header").addClass("transparente");
         }
     })
+    $("#burger").click(function(){
+        $("#burger").toggleClass("abierto");
+        $(".menu").toggleClass("abierto");
+    })
 })
