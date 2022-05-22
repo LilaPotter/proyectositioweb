@@ -145,6 +145,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
+    transition: 600ms all ease-in-out;
     
 }
 header img{
@@ -156,11 +157,28 @@ header nav a{
     color: #67666e;
     font-weight: normal;
     margin-left: 1em;
-    transition: 300ms ease-in-out all;
+    transition: 150ms ease-in-out all;
 }
+header.transparente nav a{
+    color: rgba(255, 255, 255, 0.719);
+}
+
 header nav a.activo,
 header nav a:hover{
     color: #a97c50;
     font-weight: bold;
 }
+header.transparente nav a.activo,
+header.transparente nav a:hover{
+    color: white;
+
+}
 /*Me quedé en lo último de la 107*/
+header.transparente{
+    background-color: transparent;
+    box-shadow:none ;
+}
+/* layout */
+.primera{
+    margin-top: 100vh; /*para que baje por debajo delelemento hero y lo podamos visualzar*/
+}
