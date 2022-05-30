@@ -269,6 +269,11 @@ header.transparente{
 .primera{
     margin-top: 100vh; /*para que baje por debajo delelemento hero y lo podamos visualzar*/
 }
+#pr{/* con esto se visualiza el span debajo de la barra de navegación por eso son 80 px que es lo que mide la barra  */
+    display: block;
+    margin-top: -80px;
+    padding-bottom:80px ;
+}
 
 .fila{
     display: flex;
