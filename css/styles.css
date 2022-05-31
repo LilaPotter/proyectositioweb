@@ -318,3 +318,24 @@ header.transparente{
         width: 100%;
     }
 }
+
+/*Parallax*/
+.fila.parallax{
+    background-image: url("../img/property5.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.fila.parallax div {
+    background-color:rgba(255, 255, 255, 0.746);
+    padding: 2rem;
+}
+
+.fila.parallax div p{
+    font-size: 1.5rem;
+    color: #a97c50;
+    text-align: center;
+}
