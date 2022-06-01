@@ -319,6 +319,40 @@ header.transparente{
     }
 }
 
+/*flex clases para reutilizar*/
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column-center{ /*se añade después de parallax para reutilizar código, se añade esta clase al html de las col-50, en este caso para centrar*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Parallax*/
 .fila.parallax{
     background-image: url("../img/property5.jpg");
@@ -339,3 +373,113 @@ header.transparente{
     color: #a97c50;
     text-align: center;
 }
+
+/* caja-nav */
+
+.caja-nav img{
+    width:20%;
+    margin-bottom: 1rem;
+}
+.caja-nav a{
+    border: 1px solid #a97c50;
+    background-color: white;
+    color: #a97c50;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+}
+
+.caja-nav a:hover{
+    background-color: #a97c50;
+    color: white;
+}
+
+/*Formulario contacto*/
+
+form.contacto{
+    width: 50%;
+}
+
+@media(max-width: 720px){
+    form.contacto{
+        width: 75%;
+        
+    }
+}
+@media(max-width: 420px){
+    form.contacto{
+        width: 100%;
+
+    }
+}
+
+form.contacto .fila{
+    padding: 0.8rem;
+}
+input{
+    border: none;
+    border-bottom: 1.5px solid #a97c50;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1.5px solid #805e3d;
+}
+
+input.usuario {
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+    padding-left: 2rem;
+
+}
+input.email {
+    background-image: url("../img/mail-bronce.svg");
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+    padding-left: 2rem;
+
+}
+
+button {
+    border: none;
+    background-color: #a97c50;;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+}
+
+button:hover{
+    background-color: #745638;
+    color: white;
+}
+
+/*sustitur checkbox x iconos*/
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]+ label::before{
+    content: url("../img/square.svg");
+    position: relative;
+    top: 5px;
+    padding-right: 5px;
+}
+
+input[type="checkbox"]:checked + label::before{
+    content: url("../img/check-square.svg");
+ 
+}
+
+
+
