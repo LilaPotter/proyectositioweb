@@ -38,6 +38,10 @@ img{
     max-width: 100%;
 }
 
+p{
+    margin-bottom: 0.8rem;
+}
+
 /* Hero */
 
 .hero{
@@ -353,6 +357,35 @@ header.transparente{
     align-items: center;
 }
 
+/* Espaciados y márgenes */
+
+.m-t{
+    margin-top: 1rem;
+}
+.m-b{
+    margin-bottom: 1rem;
+}
+.m-l{
+    margin-left: 1rem;
+}
+.m-r{
+    margin-right: 1rem;
+}
+
+.m-t-small{
+    margin-top: 0.5rem;
+}
+.m-b-small{
+    margin-bottom: 0.5rem;
+}
+.m-l-small{
+    margin-left: 0.5rem;
+}
+.m-r-small{
+    margin-right: 0.5rem;
+}
+
+
 /*Parallax*/
 .fila.parallax{
     background-image: url("../img/property5.jpg");
@@ -481,5 +514,38 @@ input[type="checkbox"]:checked + label::before{
  
 }
 
+/* footer */
+footer{
+    background-color: #424242;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.808);
+}
+
+footer p:first-child{
+    color:#a97c50;
+    font-weight:bold;
+}
+
+footer img.rrss{
+    height: 48px;
+}
+
+footer a{
+    font-size: 0.8rem;
+    color: #a97c50;
+    transition: 400ms ease-in-out all;
+}
+footer a:hover{
+    font-size: 0.8rem;
+    color: #6b4f33;
+}
+
+footer .copyright{
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 0.8rem;
+    text-align: center;
+}
 
 
