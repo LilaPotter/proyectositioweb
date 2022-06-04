@@ -548,4 +548,59 @@ footer .copyright{
     text-align: center;
 }
 
+/* card */
+
+.fila.grid{
+    margin-top:100px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,360px);/*reparte por columnas hasta que quepan las tarjetas de 360px*/
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.card{
+    width: 360px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.card img{
+    height: 320px;
+}
+
+.card .footer-card{
+    padding: 0.8rem;
+    width: 100%;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card .footer-card p{
+    margin-bottom: 0.5rem;
+}
+
+.card .footer-card p:first-child{
+    font-weight:bold ;
+}
+
+.card .footer-card a{
+    background-color: #a97c50;
+    color:white;
+    font-size: 0.8rem;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    align-self: center;
+    transition: 400ms ease-in-out all;
+}
+.card .footer-card a:hover{
+    background-color: #503b26;
+   
+}
 
