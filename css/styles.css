@@ -273,7 +273,7 @@ header.transparente{
 .primera{
     margin-top: 100vh; /*para que baje por debajo delelemento hero y lo podamos visualzar*/
 }
-#pr{/* con esto se visualiza el span debajo de la barra de navegación por eso son 80 px que es lo que mide la barra  */
+#pr, #aviso, #cookies{/* con esto se visualiza el span debajo de la barra de navegación por eso son 80 px que es lo que mide la barra  */
     display: block;
     margin-top: -80px;
     padding-bottom:80px ;
@@ -282,6 +282,10 @@ header.transparente{
 .fila{
     display: flex;
     padding: 2rem 1rem;
+}
+
+.fila.contacto{
+    margin-top:80px;
 }
 .col-100{
     width: 100%;
@@ -604,3 +608,24 @@ footer .copyright{
    
 }
 
+/* Ficha propiedad */
+
+.propiedad{
+    margin-top: 80px;
+    background-image: url("/img/property5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.propiedad div:first-child{
+    background-color: rgba(255, 255, 255, 0.883);
+    border-radius: 1rem;
+}
+.propiedad div:first-child h1{
+    font-size: 1.4rem;
+    color: #a97c50;
+}
+.propiedad div:first-child p img{
+    width: 28px;
+    height: 28px;
+}
